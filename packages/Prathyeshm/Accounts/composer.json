@@ -1,0 +1,21 @@
+{
+    "name": "prathyeshm/accounts",
+    "description": "an accounts module",
+    "type": "library",
+    "require": {
+        "illuminate/support": "8.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Prathyeshm\\Accounts\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "prathyesh",
+            "email": "prathyeshm@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
