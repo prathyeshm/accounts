@@ -1,6 +1,7 @@
 {
     "name": "prathyeshm/accounts",
     "description": "an accounts module",
+    "version": "1.0.0",
     "type": "library",
     "require": {
         "illuminate/support": "8.x-dev as 8.83.29"
