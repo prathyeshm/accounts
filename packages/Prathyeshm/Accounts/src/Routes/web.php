@@ -1,13 +1,13 @@
 <?php
-
-use Illuminate\Support\Facades\Route;
 use Prathyeshm\Accounts\Controller\AccountController;
+use Illuminate\Support\Facades\Route;
 
-// Route::prefix('accounts')->group(function () {
-//     Route::get('/', [AccountController::class, 'index'])->name('accounts.index');
+
+Route::prefix('accounts')->group(function () {
+    Route::get('/', [AccountController::class, 'index']);
    
-// });
+});
 
 
 
-Route::get('/', [AccountController::class, 'index']);
+// Route::get('/accounts', [AccountController::class, 'index']);

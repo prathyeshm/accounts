@@ -1,6 +1,6 @@
 <?php
 
-namespace Prathyeshm\Accounts;
+namespace Prathyeshm\Accounts\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -15,5 +15,6 @@ class AccountServiceProvider extends ServiceProvider
     {
         // Perform boot actions like routes, views, migrations
         $this->loadRoutesFrom(__DIR__.'/../Routes/web.php');
+        $this->loadViewsFrom(__DIR__.'/../../src/Views', 'accounts');
     }
 }

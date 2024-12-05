@@ -3,12 +3,20 @@
     "description": "an accounts module",
     "type": "library",
     "require": {
-        "illuminate/support": "8.x-dev"
+        "illuminate/support": "8.x-dev as 8.83.29"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
             "Prathyeshm\\Accounts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [],
+            "providers": [
+                "Prathyeshm\\Accounts\\Providers\\AccountServiceProvider"
+            ]
         }
     },
     "authors": [

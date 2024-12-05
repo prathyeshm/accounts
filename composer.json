@@ -10,7 +10,8 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "prathyeshm/accounts": "dev-main"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -57,7 +58,7 @@
         "laravel": {
             "dont-discover": [],
             "providers": [
-                "Prathyeshm\\Accounts\\Provider\\AccountServiceProvider"
+                "Prathyeshm\\Accounts\\Providers\\AccountServiceProvider"
             ]
         }
     },

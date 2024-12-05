@@ -4,6 +4,7 @@ namespace Prathyeshm\Accounts\Controller;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\View;
 
 
 class AccountController extends Controller
@@ -11,6 +12,6 @@ class AccountController extends Controller
 
     public function index()
     {
-        echo "haiiii";
+        return view('accounts::home');
     }
 }

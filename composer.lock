@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c61ff82cbf0142a401a48a8161e1595a",
+    "content-hash": "a5178a21a0126d40ee045cbabb2ef0ab",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1035,7 +1035,7 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.83.29",
+            "version": "8.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
@@ -2290,6 +2290,45 @@
                 }
             ],
             "time": "2024-07-20T21:41:07+00:00"
+        },
+        {
+            "name": "prathyeshm/accounts",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/Prathyeshm/Accounts",
+                "reference": "e276d5bf3f057985368afc1a635506b6bf60e58f"
+            },
+            "require": {
+                "illuminate/support": "8.x-dev as 8.83.29"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "dont-discover": [],
+                    "providers": [
+                        "Prathyeshm\\Accounts\\Providers\\AccountServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Prathyeshm\\Accounts\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "prathyesh",
+                    "email": "prathyeshm@gmail.com"
+                }
+            ],
+            "description": "an accounts module",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "psr/clock",
@@ -7755,7 +7794,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "prathyeshm/accounts": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

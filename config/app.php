@@ -175,7 +175,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Prathyeshm\Accounts\Provider\AccountServiceProvider::class,
+         Prathyeshm\Accounts\Providers\AccountServiceProvider::class,
 
     ],
 
